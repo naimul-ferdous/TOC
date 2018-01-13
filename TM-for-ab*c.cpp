@@ -14,7 +14,7 @@ int main()
     while(1)
     {
          if(state==0)
-        {
+         {
             if(inpstr[head]=='a')
             {
                 state=1;
@@ -25,9 +25,9 @@ int main()
                 state=4;
                 break;
             }
-        }
-        else if(state==1)
-        {
+         }
+         else if(state==1)
+         {
             if(inpstr[head]=='b')
             {
                 state=1;
@@ -43,9 +43,9 @@ int main()
                 state==4;
                 break;
             }
-        }
-        else if(state==2)
-        {
+         }
+         else if(state==2)
+         {
             if(inpstr[head]==BlankSpace)
             {
                 state=3;
@@ -57,17 +57,17 @@ int main()
                 state=4;
                 break;
             }
-        }
-        else
-        {
+         }
+         else
+         {
             state=4;
             break;
-        }
+         }
     }
 
     if(state==3)
         printf("    Accepted");
-   else
+    else
         printf("    Rejected");
 
     printf("\n");
