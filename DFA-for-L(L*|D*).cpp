@@ -8,13 +8,15 @@ int islet(char c)
     return 0;
 }
 
-int isdig(char c) {
+int isdig(char c) 
+{
     if(c>='0' && c<='9')
         return 1;
     return 0;
 }
 
-int main() {
+int main() 
+{
     char c, inpstr[50];
     int i, q;
     printf("Enter C identifier: ");
@@ -24,14 +26,18 @@ int main() {
     c=inpstr[i];
     printf("\n");
     printf("%s ", inpstr);
-    while(c!=EOS) {
-        if(q==1 && islet(c)) {
+    while(c!=EOS) 
+    {
+        if(q==1 && islet(c)) 
+        {
             q=2;
         }
-        else if(q==2 && (islet(c) || isdig(c))) {
+        else if(q==2 && (islet(c) || isdig(c))) 
+        {
              q=2;
         }
-        else {
+        else 
+        {
              q=3;
              break;
         }
