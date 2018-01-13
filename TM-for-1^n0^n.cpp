@@ -13,7 +13,7 @@ int main()
     printf("%s ", inpstr);
     while(1)
     {
-         if(state==0)
+        if(state==0)
         {
             if(inpstr[head]=='1')
             {
