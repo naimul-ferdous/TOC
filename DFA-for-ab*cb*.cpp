@@ -14,7 +14,7 @@ int main()
     printf("%s ", inpstr);
     while(c!=EOS)
     {
-         if(q==1 && c=='a')
+        if(q==1 && c=='a')
         {
             q=2;
         }
